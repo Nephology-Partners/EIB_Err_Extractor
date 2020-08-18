@@ -14,12 +14,12 @@ Imports System.Security
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("EIB_Err_Extractor")> 
 <Assembly: AssemblyCopyright("Copyright ©  2020")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTrademark("")>
 
 ' Setting ComVisible to false makes the types in this assembly not visible 
 ' to COM components.  If you need to access a type in this assembly from 
 ' COM, set the ComVisible attribute to true on that type.
-<Assembly: ComVisible(False)>
+<Assembly: ComVisible(True)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
 <Assembly: Guid("fa89f105-b978-43f9-8c12-b750fb9a032b")> 
