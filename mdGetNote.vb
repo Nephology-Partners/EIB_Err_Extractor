@@ -1,5 +1,4 @@
-﻿Imports Microsoft.Office.Interop.Excel
-Module basGetNote
+﻿Module mdGetNote
     Public Function GetNote(a As Excel.Range) As String
         Dim c As Excel.Range
         GetNote = ""
@@ -11,6 +10,4 @@ Module basGetNote
             End If
         Next c
     End Function
-
-
 End Module
