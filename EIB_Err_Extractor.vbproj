@@ -194,7 +194,9 @@
     <EmbeddedResource Include="Ribbon1.resx">
       <DependentUpon>Ribbon1.vb</DependentUpon>
     </EmbeddedResource>
-    <None Include="EIB_Err_Extractor_TemporaryKey.pfx" />
+    <None Include="EIB_Err_Extractor_TemporaryKey.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="ThisAddIn.Designer.xml">
       <DependentUpon>ThisAddIn.vb</DependentUpon>
     </None>
