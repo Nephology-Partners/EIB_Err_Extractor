@@ -21,6 +21,13 @@ Public Class Ribbon1
         If sh.Name = "Overview" Then 'TODO: make option? 
             sh = xl.Sheets(2)
         End If
+
+        If sh.Cells(5, 2).value2 <> "Spreadsheet Key*" Then
+            MsgBox("Please open an EIB to use this tool", Title:="Wrong file Type")
+            xl.Cursor = Excel.XlMousePointer.xlDefault
+            Exit Sub
+        End If
+
         'Get spreadsheet key
         eestring = sh.Cells(iRow, 2).value2
         Do Until eestring Is Nothing
