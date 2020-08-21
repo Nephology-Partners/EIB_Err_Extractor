@@ -28,6 +28,10 @@ Public Class Ribbon1
             Exit Sub
         End If
 
+        If sh.AutoFilterMode = True Then sh.AutoFilterMode = False
+        sh.Rows(5).autofilter
+
+
         'Get spreadsheet key
         eestring = sh.Cells(iRow, 2).value2
         Do Until eestring Is Nothing

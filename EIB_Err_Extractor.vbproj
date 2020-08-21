@@ -34,12 +34,12 @@
     <PublishUrl>C:\Users\CJMS_CONS\Documents\xladdin\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.2</ApplicationVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
-    <ProductName>EIB_Err_Extractor</ProductName>
+    <ProductName>EIB Error Extractor</ProductName>
     <PublisherName>Nephology Partners</PublisherName>
     <SupportUrl />
     <FriendlyName>EIB_Err_Extractor</FriendlyName>
