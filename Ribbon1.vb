@@ -11,9 +11,10 @@ Public Class Ribbon1
         Dim sh As Excel.Worksheet
         Dim iRow As Integer 'TODO: Should this be long?
         Dim eestring As String
+        Dim sRange As String
         'Reference to excel
         xl = Globals.ThisAddIn.Application
-        xl.Cursor = Excel.XlMousePointer.xlWait
+
         'Reference first data row
         iRow = 6 'TODO: make option?
         'Reference to worksheet
@@ -27,7 +28,7 @@ Public Class Ribbon1
             xl.Cursor = Excel.XlMousePointer.xlDefault
             Exit Sub
         End If
-
+        xl.Cursor = Excel.XlMousePointer.xlWait
         If sh.AutoFilterMode = True Then sh.AutoFilterMode = False
         sh.Rows(5).autofilter
 
@@ -39,6 +40,8 @@ Public Class Ribbon1
             iRow += 1
             eestring = sh.Cells(iRow, 2).value2
         Loop
+        sRange = sh.Cells(5, 1).address & ":" & sh.Cells(iRow, xl.WorksheetFunction.CountA(sh.Rows(5))).address
+        sh.Range(sRange).AutoFilter(Field:=1, Criteria1:="<>")
         'Reset cursor
         xl.Cursor = Excel.XlMousePointer.xlDefault
     End Sub
