@@ -29,6 +29,7 @@ Public Class Ribbon1
             Exit Sub
         End If
         xl.Cursor = Excel.XlMousePointer.xlWait
+        sh.Select()
         If sh.AutoFilterMode = True Then sh.AutoFilterMode = False
         sh.Rows(5).autofilter
 
